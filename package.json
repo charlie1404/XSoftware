@@ -1,0 +1,46 @@
+{
+  "name": "XSoftware",
+  "homepage": "https://github.com/charlie1404/XSoftware",
+  "bugs": "https://github.com/charlie1404/XSoftware/issues",
+  "version": "1.0.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-linux": "electron-builder --linux --x64  --dir",
+    "dist-linux": "electron-builder --linux --x64",
+    "pack": "electron-builder --win --x64  --dir",
+    "dist": "electron-builder --win --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrlie1404/XSoftware.git"
+  },
+  "author": "Shailendra Gupta",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mysql": "^2.14.1"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^1.7.5",
+    "electron-builder": "^19.27.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "build": {
+    "asar": "true",
+    "appId": "com.gupta.XSoftware",
+    "productName": "XSoftware",
+    "copyright": "Copyright © year ${author}",
+    "files": [
+      "**/*",
+      "build",
+      "node_modules",
+      "main.js"
+    ],
+    "mac": {
+      "category": "com.gupta.XSoftware.category.type"
+    }
+  }
+}

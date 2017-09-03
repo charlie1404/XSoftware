@@ -1,0 +1,58 @@
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>Dashboard <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+    
+    <section class="content">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <h3 ng-init="countOfReports='...'">{{ countOfReports }}</h3>
+                        <p>Total Reports</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a ui-sref="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3 ng-init="dbLastUpdate='...'">{{ dbLastUpdate }}</h3>
+                        <p>Database Last Update</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-stats-bars"></i>
+                    </div>
+                    <a ui-sref="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4">
+                <!-- small box -->
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                        <h3 ng-init="lastLogin='...'">{{ lastLogin }}</h3>
+                        <p>Last Login</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-person-add"></i>
+                    </div>
+                    <a ui-sref="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+        </div>
+
+    </section>
+</div>

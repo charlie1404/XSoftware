@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inventory Software</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <base href="./">
+
+        <style>
+            #loader,#loader:before{border-radius:50%;position:absolute}.preloader{position:fixed;top:0;bottom:0;left:0;right:0;z-index:99999999}#loader{display:block;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;border:4px solid transparent;border-top-color:#3498db;border-bottom-color:#CB6724;-webkit-animation:spin 4s linear infinite;animation:spin 4s linear infinite;z-index:99999}#loader:before{content:"";top:7px;left:7px;right:7px;bottom:7px;border:4px solid transparent;border-top-color:#e74c3c;border-bottom-color:#18B3C3;-webkit-animation:spin 2s linear infinite;animation:spin-rev 2s linear infinite}#loader:after{content:"";position:absolute;top:20px;left:20px;right:20px;bottom:20px;border-radius:50%;border:4px solid transparent;border-top-color:#f9c922;border-bottom-color:#0636DD;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes spin-rev{100%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}0%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin-rev{100%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}0%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}
+        </style>
+
+        <link href="libs/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+
+        <link href="libs/sweetalert/dist/sweetalert.css" type="text/css" rel="stylesheet"/>
+        <link href="libs/animate.css/animate.css" type="text/css" rel="stylesheet"/>
+        <link href="libs/angular-loading-bar/build/loading-bar.css" type="text/css" rel="stylesheet"/>
+
+        <link href="css/adminlte.css" type="text/css" rel="stylesheet" />
+        <link href="css/admin-lte-all-skins.css" type="text/css" rel="stylesheet" />
+        <link href="css/app.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body ng-app="XSoftware" class="hold-transition skin-blue sidebar-mini">
+
+        <div class="preloader">
+            <div id="loader"></div>
+        </div>
+
+        <div class="wrapper">
+            <header class="main-header">
+                <a ui-sref="dashboard" class="logo">
+                    <span class="logo-mini"><b>X</b>Soft</span>
+                    <span class="logo-lg"><b>X</b>Software</span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a ui-sref="" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a ui-sref="dashboard" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu">
+                        <li class="header"><h6>MAIN NAVIGATION</h6></li>
+                        <li>
+                            <a ui-sref="dashboard">
+                                <i class="fa fa-dashboard"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="searchreport">
+                                <i class="fa fa-search"></i><span>Search Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="ui-view"></div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.3
+                </div>
+                <strong>Copyright &copy; 2014-2016 <a ui-sref="">Charlie1404</a>.</strong> All rights reserved.
+            </footer>
+        </div>
+
+        <script src="libs/jquery/dist/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
+        <script src="libs/angular/angular.js"></script>
+
+        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="scripts/admin-lte.js"></script>
+        <script src="libs/sweetalert/dist/sweetalert-dev.js"></script>
+
+        <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="libs/angular-loading-bar/build/loading-bar.js"></script>
+
+
+        <script src="scripts/bootstrap.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/controller/dashboard.js"></script>
+        <script src="scripts/controller/searchreport.js"></script>
+    </body>
+</html>
